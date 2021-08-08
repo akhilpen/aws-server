@@ -1,0 +1,25 @@
+{
+  "name": "aws-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/pm2/bin/pm2 start ./server.js --name aws-server --log ../logs/app.log",
+    "stop": "node ./node_modules/pm2/bin/pm2 stop aws-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhilpen/aws-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akhilpen/aws-server/issues"
+  },
+  "homepage": "https://github.com/akhilpen/aws-server#readme",
+  "dependencies": {
+    "pm2": "^5.1.0"
+  },
+  "devDependencies": {}
+}
